@@ -57,7 +57,7 @@ export const Login = () => {
 
       <Stack borderRadius={7} bg={'#000'} spacing={8} mx={'auto'} maxW={'lg'} py={12} px={6}>
         <Stack align={'center'}>
-          <Heading mb={5} fontSize={'5xl'}>Inicio de sesión</Heading>
+          <Heading color={'#FFF'} mb={5} fontSize={'5xl'}>Inicio de sesión</Heading>
           <Text fontSize={'lg'} color={'gray.600'}>
             para disfrutar de toda nuestra genialidad ✌️
           </Text>

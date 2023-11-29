@@ -23,28 +23,16 @@ const LoadingComponent = () => {
 
 export const EntranceParking = () => {
   const [loading, setLoading] = useState(true);
-  const [message, setMessage] = useState('Registrando ingreso...');
+  const [message, setMessage] = useState('Registrando vehiculo.');
   const navigate = useNavigate();
 
   useEffect(() => {
-    const timeout1 = setTimeout(() => {
-      setMessage('Fecha y hora registrada.');
-    }, 4000);
-
-    const timeout2 = setTimeout(() => {
-      setMessage('Número de celda registrado.');
-
       const timeout3 = setTimeout(() => {
         setLoading(false);
         navigate('/datos-registros')
       }, 4000);
-
-      return () => clearTimeout(timeout3);
-    }, 6000);
-
     return () => {
-      clearTimeout(timeout1);
-      clearTimeout(timeout2);
+      clearTimeout(timeout3);
     };
   }, []);
 
